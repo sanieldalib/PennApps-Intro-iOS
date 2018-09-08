@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		EF202B1121431B0E00521FDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF202B1021431B0E00521FDB /* AppDelegate.swift */; };
-		EF202B1321431B0E00521FDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF202B1221431B0E00521FDB /* ViewController.swift */; };
+		EF202B1321431B0E00521FDB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF202B1221431B0E00521FDB /* HomeViewController.swift */; };
 		EF202B1621431B0F00521FDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF202B1421431B0F00521FDB /* Main.storyboard */; };
 		EF202B1821431B1100521FDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF202B1721431B1100521FDB /* Assets.xcassets */; };
 		EF202B1B21431B1100521FDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF202B1921431B1100521FDB /* LaunchScreen.storyboard */; };
+		EF202B2321431C5700521FDB /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF202B2221431C5700521FDB /* Contact.swift */; };
+		EF202B2521431D8D00521FDB /* db.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF202B2421431D8D00521FDB /* db.swift */; };
+		EF202B2821433D5000521FDB /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF202B2721433D5000521FDB /* AddViewController.swift */; };
+		EF202B2A21434DB300521FDB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF202B2921434DB300521FDB /* DetailViewController.swift */; };
+		EF202B2C2143551800521FDB /* contactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF202B2B2143551800521FDB /* contactCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF202B0D21431B0E00521FDB /* PhoneBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF202B1021431B0E00521FDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF202B1221431B0E00521FDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF202B1221431B0E00521FDB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EF202B1521431B0F00521FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF202B1721431B1100521FDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF202B1A21431B1100521FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF202B1C21431B1100521FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF202B2221431C5700521FDB /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		EF202B2421431D8D00521FDB /* db.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = db.swift; sourceTree = "<group>"; };
+		EF202B2721433D5000521FDB /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		EF202B2921434DB300521FDB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EF202B2B2143551800521FDB /* contactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,26 @@
 			isa = PBXGroup;
 			children = (
 				EF202B1021431B0E00521FDB /* AppDelegate.swift */,
-				EF202B1221431B0E00521FDB /* ViewController.swift */,
+				EF202B1221431B0E00521FDB /* HomeViewController.swift */,
+				EF202B2721433D5000521FDB /* AddViewController.swift */,
+				EF202B2621431D9500521FDB /* Model */,
 				EF202B1421431B0F00521FDB /* Main.storyboard */,
+				EF202B2B2143551800521FDB /* contactCell.swift */,
+				EF202B2921434DB300521FDB /* DetailViewController.swift */,
 				EF202B1721431B1100521FDB /* Assets.xcassets */,
 				EF202B1921431B1100521FDB /* LaunchScreen.storyboard */,
 				EF202B1C21431B1100521FDB /* Info.plist */,
 			);
 			path = PhoneBook;
+			sourceTree = "<group>";
+		};
+		EF202B2621431D9500521FDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF202B2421431D8D00521FDB /* db.swift */,
+				EF202B2221431C5700521FDB /* Contact.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF202B1321431B0E00521FDB /* ViewController.swift in Sources */,
+				EF202B2C2143551800521FDB /* contactCell.swift in Sources */,
+				EF202B2821433D5000521FDB /* AddViewController.swift in Sources */,
+				EF202B2321431C5700521FDB /* Contact.swift in Sources */,
+				EF202B2521431D8D00521FDB /* db.swift in Sources */,
+				EF202B2A21434DB300521FDB /* DetailViewController.swift in Sources */,
+				EF202B1321431B0E00521FDB /* HomeViewController.swift in Sources */,
 				EF202B1121431B0E00521FDB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
